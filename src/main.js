@@ -30,7 +30,7 @@ const store = createStore({
 	getters: {
 		activeIndexes: (state) => (payload) => {
 			let indexes = [];
-			state.histore.forEach((number, index) => {
+			state.history.forEach((number, index) => {
 				if (number === payload) {
 					indexes.push(index)
 				}
